@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  script(src='/javascripts/tasks-list.js')
+  h1= title
+  p Welcome to #{title}
+  div(class="container")
+    div(class="row")
+      div(class="col" id="day_0")
+        div(class="border-bottom text-center font-weight-bold") Today
+      div(class="col" id="day_1")
+        div(class="border-bottom text-center font-weight-bold") -1 day
+      div(class="col" id="day_2")
+        div(class="border-bottom text-center font-weight-bold") -2 days
+      div(class="col" id="day_3")
+        div(class="border-bottom text-center font-weight-bold") -3 days
